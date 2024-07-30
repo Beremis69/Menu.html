@@ -9,34 +9,34 @@
 <h1>Menú Principal</h1>
 <p>Serás redirigido automáticamente a la página correspondiente.</p> 
 <p>_____________________________________________________________</p>
-<p>1. Multiplicaciones</p>
-<p>2. Velocidad</p>
-<p>3. Terrenos</p>
-<p>4. Conversión de monedas</p>
-<p>5. Notas</p>
+<p>1. <a id="multiplicaciones-link" href="">Multiplicaciones</a></p>
+<p>2. <a id="velocidad-link" href="">Velocidad</a></p>
+<p>3. <a id="terrenos-link" href="">Terrenos</a></p>
+<p>4. <a id="conversion-link" href="">Conversión de monedas</a></p>
+<p>5. <a id="notas-link" href="">Notas</a></p>
 
 <label for="A1">Opción:</label>
 <input type="number" id="A1" name="A1">
 <button type="button" onclick="tr()">Ir</button>
+
 <script>
   function tr() {
     const A = parseInt(document.getElementById('A1').value);
-    
+
     if (A === 1) {
-      window.location.href = "https://beremis69.github.io/Multic/"; // Reemplaza con la URL correcta
+      document.getElementById('https://beremis69.github.io/Multic/').click();
     } else if (A === 2) {
-      window.location.href = "URL_VELOCIDAD"; // Reemplaza con la URL correcta
+      document.getElementById('velocidad-link').click();
     } else if (A === 3) {
-      window.location.href = "URL_TERRENOS"; // Reemplaza con la URL correcta
+      document.getElementById('terrenos-link').click();
     } else if (A === 4) {
-      window.location.href = "URL_CONVERSION"; // Reemplaza con la URL correcta
+      document.getElementById('conversion-link').click();
     } else if (A === 5) {
-      window.location.href = "URL_NOTAS"; // Reemplaza con la URL correcta
+      document.getElementById('notas-link').click();
     } else {
       alert("Opción no válida. Introduce un número del 1 al 5.");
     }
   }
 </script>
-
 </body>
 </html>
