@@ -20,7 +20,21 @@
 <button type="button" onclick="tr()">Ir</button>
 <script>
   function tr() {
-      window.open("https://beremis69.github.io/Multic/");
+    const A = parseInt(document.getElementById('A1').value);
+    
+    if (A === 1) {
+      window.location.href = "URL_MULTIPLICACIONES"; // Reemplaza con la URL correcta
+    } else if (A === 2) {
+      window.location.href = "URL_VELOCIDAD"; // Reemplaza con la URL correcta
+    } else if (A === 3) {
+      window.location.href = "URL_TERRENOS"; // Reemplaza con la URL correcta
+    } else if (A === 4) {
+      window.location.href = "URL_CONVERSION"; // Reemplaza con la URL correcta
+    } else if (A === 5) {
+      window.location.href = "URL_NOTAS"; // Reemplaza con la URL correcta
+    } else {
+      alert("Opción no válida. Introduce un número del 1 al 5.");
+    }
   }
 </script>
 
